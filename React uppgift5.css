@@ -1,0 +1,66 @@
+body {
+ 
+  background-image: url("reactimg.png");
+}
+.part{
+  margin:40px;
+}
+#msg {
+  
+  margin:30px;
+  color : White;
+}
+#input{
+  margin:20px;
+  border-style: outset dashed;
+  
+}
+#calcul1{
+  margin: 10px;
+  border-style: outset dashed;
+  background-color: blue;
+  font-weight: bold;
+  color: white;    
+  
+}
+#calcul2{
+  margin: 10px;
+   border-style:outset dashed;
+   background-color: blue;
+  font-weight: bold;
+  color: white;
+}
+
+#spanResult{
+    margin: 10px;
+   border-style:inset ;
+   background-color: yellow;
+  font-weight: bold;
+  
+  font-size:20px;
+}
+
+.button1 {
+  background-color:yellow;
+   margin: 20px;
+   border-style:inset ;
+  width:140px;
+}
+
+.button2{
+  background-color:red;
+   margin: 20px;
+   border-style:inset ;
+  width:140px;
+}
+
+#toggleDiv{
+   margin: 10px;
+   border-style: dashed;
+   background-color: gray;
+   font-weight: bold;
+   text-align: center;
+   color:white;
+  
+}
+
