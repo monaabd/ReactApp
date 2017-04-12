@@ -36,7 +36,6 @@ body {
    border-style:inset ;
    background-color: yellow;
   font-weight: bold;
-  
   font-size:20px;
 }
 
@@ -56,9 +55,9 @@ body {
 
 #toggleDiv{
    margin: 10px;
-   border-style: dashed;
+   border-style:dotted;
    background-color: gray;
-   font-weight: bold;
+   font-size:20px;
    text-align: center;
    color:white;
   
