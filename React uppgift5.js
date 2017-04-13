@@ -77,9 +77,13 @@ class Calculate extends React.Component {
    constructor(props){
      super(props);
      this.state={
-       msg:'Click buttons below ',
+       msg:'Click buttons below & see what happends',
        button1css: '',
         button2css: '',
+        valueBut1: 0 , 
+        valueBut2: 0, 
+        divDisplay1:'none',
+        divDisplay2:'none',
      };//state
      
      this.handleClick1 = this.handleClick1.bind(this);
@@ -91,6 +95,9 @@ class Calculate extends React.Component {
        msg:'First button is clicked',
        button1css: 'button1',
         button2css: '',
+        valueBut1: this.state.valueBut1 +1,   
+         divDisplay1:'inline',
+         divDisplay2:'none',
      });
        
    }//handleevent
@@ -100,26 +107,27 @@ class Calculate extends React.Component {
        msg:'Second button is clicked',
        button2css: 'button2',
         button1css: '',
+        valueBut2: this.state.valueBut2 +1, 
+         divDisplay1:'none',
+         divDisplay2:'inline',
      });
        
    }//handleevent
   
-  /*myfunc(){
-    if(this.handleClick1===true){
-      
-    }return (className="butt1");
-  }//func */
    render(){
     return( 
       <div className="part"> Part 3:
        <br/>
-        <div id="toggleDiv">{this.state.msg}</div>
-        <button className={this.state.button1css} onClick={this.handleClick1}>
-        click 1
+        <div id="toggleDiv"> {this.state.msg}</div>
+        
+        <button  className={this.state.button1css} onClick={this.handleClick1}>
+        Click 1
         </button>
-        <button className={this.state.button2css} onClick={this.handleClick2}>
+        <button  className={this.state.button2css} onClick={this.handleClick2}>
          Click 2
         </button>
+        <div style={{display:this.state.divDisplay1}}> Clicks number :{this.state.valueBut1}</div>
+        <div style={{display:this.state.divDisplay2}}> Clicks number :{this.state.valueBut2}</div>
       </div>        
     )//return
     
@@ -129,7 +137,7 @@ class Calculate extends React.Component {
    
       
    ReactDOM.render(
-   <p><InputApp/><Calculate /><ToggleButton/></p>,
+   <div><InputApp/><Calculate /><ToggleButton/></div>,
   document.getElementById('app')
 );
 

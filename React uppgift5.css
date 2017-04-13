@@ -43,14 +43,14 @@ body {
   background-color:yellow;
    margin: 20px;
    border-style:inset ;
-  width:140px;
+  width:70px;
 }
 
 .button2{
   background-color:red;
    margin: 20px;
    border-style:inset ;
-  width:140px;
+  width:70px;
 }
 
 #toggleDiv{
@@ -62,4 +62,5 @@ body {
    color:white;
   
 }
+
 
