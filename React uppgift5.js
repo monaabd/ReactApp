@@ -78,7 +78,8 @@ class Calculate extends React.Component {
      super(props);
      this.state={
        msg:'Click buttons below ',
-       classs : '',
+       button1css: '',
+        button2css: '',
      };//state
      
      this.handleClick1 = this.handleClick1.bind(this);
@@ -88,7 +89,8 @@ class Calculate extends React.Component {
    handleClick1(event){
      this.setState({
        msg:'First button is clicked',
-       class1 : 'button1'
+       button1css: 'button1',
+        button2css: '',
      });
        
    }//handleevent
@@ -96,7 +98,8 @@ class Calculate extends React.Component {
    handleClick2(event){
      this.setState({
        msg:'Second button is clicked',
-       class2: 'button2'
+       button2css: 'button2',
+        button1css: '',
      });
        
    }//handleevent
@@ -111,10 +114,10 @@ class Calculate extends React.Component {
       <div className="part"> Part 3:
        <br/>
         <div id="toggleDiv">{this.state.msg}</div>
-        <button className={this.state.class1} onClick={this.handleClick1}>
+        <button className={this.state.button1css} onClick={this.handleClick1}>
         click 1
         </button>
-        <button className={this.state.class2} onClick={this.handleClick2}>
+        <button className={this.state.button2css} onClick={this.handleClick2}>
          Click 2
         </button>
       </div>        
