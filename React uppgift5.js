@@ -5,7 +5,7 @@
  class InputApp extends React.Component {
   constructor(props){
     super(props);
-    this.state={msg:"Your Word Apear Here"};
+    this.state={msg:"Your Word Apears Here"};
     this.changeInput = this.changeInput.bind(this);
     
   }
@@ -19,8 +19,8 @@
   render(){
     return(
       <div className="part">
-      Part 1:
-       <h2 id="msg">{this.state.msg}</h2>
+      Part 1: Write your words on white space & see the copy of that! 
+       <h3 id="msg">{this.state.msg}</h3>
       <input id="input" placeholder="Write Your Word" onChange={this.changeInput}/>
       
       </div>
@@ -57,7 +57,7 @@ class Calculate extends React.Component {
  };
 	render() {
 		return (
-		 <p className="part"> Part 2:
+		 <p className="part"> Part 2: Write numbers in each blue field & receive the sum of them in yellow field!
             <br/>
 			<input id="calcul1" type="text" 
 				value={this.state.firstText} 
@@ -77,7 +77,7 @@ class Calculate extends React.Component {
    constructor(props){
      super(props);
      this.state={
-       msg:'Click buttons below & see what happends',
+       msg:'Text here will change after clicking on buttons',
        button1css: '',
         button2css: '',
         valueBut1: 0 , 
@@ -116,7 +116,7 @@ class Calculate extends React.Component {
   
    render(){
     return( 
-      <div className="part"> Part 3:
+      <div className="part"> Part 3: Click on two buttons & see the change in text & color , plus can see how many times you click on them!
        <br/>
         <div id="toggleDiv"> {this.state.msg}</div>
         
